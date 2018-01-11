@@ -7,5 +7,12 @@ app.get('/', function (req, res, next) {
     device.create();
     res.send('end');
 });
+app.get('/list', function (req, res, next) {
+    console.log('ok');
+  device.listshow().then(res=>{
+       console.log(res);
+       res.send('end');
+   })
+});
 
 module.exports = router;

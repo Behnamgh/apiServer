@@ -6,7 +6,8 @@ exports.create = function (req, res, next) {
     next();
 };
 exports.listshow = function (req, res, next){
-    next(null, { 'some': lists});
+    return lists;
+    next();
 }
 
 
