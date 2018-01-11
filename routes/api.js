@@ -14,5 +14,12 @@ app.get('/list', function (req, res, next) {
        res.send('end');
    })
 });
+app.post('/list', function (req, res, next) {
+    console.log('ok');
+  device.listshow().then(res=>{
+       console.log(res);
+       res.send('end');
+   })
+});
 
 module.exports = router;

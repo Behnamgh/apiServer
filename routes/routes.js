@@ -13,4 +13,8 @@ module.exports = function (app, passport) {
     let resu = device.listshow();
         res.send(resu);
     });    
+    app.post("/list", function (req, res) {
+    let resu = device.listshow();
+        res.send(resu);
+    });    
 };
