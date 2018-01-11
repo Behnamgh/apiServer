@@ -11,7 +11,6 @@ module.exports = function (app, passport) {
     });    
     app.get("/list", function (req, res) {
     let resu = device.listshow();
-    console.log('what:', resu);
-    res.send('doned');
+        res.send(resu);
     });    
 };

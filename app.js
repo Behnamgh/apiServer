@@ -32,7 +32,7 @@ require('./routes/routes')(app);
 
 
 app.listen(port, function (req, res) {
-  console.log('is listening on' + port);
+  console.log('is listening on: ' + port);
 });
 // app.listen(port);
 // console.log("The Server runs on " + port);
